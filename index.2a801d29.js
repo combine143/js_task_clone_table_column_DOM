@@ -1,0 +1,2 @@
+var e=document.querySelector("table");e.querySelectorAll("thead tr, tfoot tr").forEach(function(e){var t=document.createElement("th");t.textContent="Position";var r=e.children[4]||null;e.insertBefore(t,r)}),e.querySelectorAll("tbody tr").forEach(function(e){var t=e.cells[1].textContent,r=document.createElement("td");r.textContent=t;var n=e.children[4]||null;e.insertBefore(r,n)});
+//# sourceMappingURL=index.2a801d29.js.map
