@@ -8,7 +8,10 @@ headerFooterRows.forEach((row) => {
   const th = document.createElement('th');
 
   th.textContent = 'Position';
-  row.insertBefore(th, row.children[4]);
+
+  const referenceNode = row.children[4] || null;
+
+  row.insertBefore(th, referenceNode);
 });
 
 const rows = table.querySelectorAll('tbody tr');
@@ -19,5 +22,8 @@ rows.forEach((row) => {
   const td = document.createElement('td');
 
   td.textContent = position;
-  row.insertBefore(td, row.children[4]);
+
+  const referenceNode = row.children[4] || null;
+
+  row.insertBefore(td, referenceNode);
 });
